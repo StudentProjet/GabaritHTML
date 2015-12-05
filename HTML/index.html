@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>The Flash</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/imgs/logo.png" />
+
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="assets/css/text.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/style_burger.css" />
+        <link rel="stylesheet" href="assets/css/style_mobile.css" />
+
+        <noscript>
+            <link rel="stylesheet" href="assets/css/mobile.css" />
+        </noscript>
+
+        <script>
+            var ADAPT_CONFIG = {
+                path: 'assets/css/',
+                dynamic: true,
+                range: [
+                    '0px    to 760px  = mobile.css',
+                    '760px  to 980px  = 720.css',
+                    '980px  to 1280px = 960.css',
+                    '1280px to 1600px = 1200.css',
+                    '1600px to 1940px = 1560.css',
+                    '1940px to 2540px = 1920.css',
+                    '2540px           = 2520.css'
+                ]
+            };
+        </script>
+        <script src="assets/js/adapt.min.js"></script>
+    </head>
+<body>
+
+    <!-- debut container -->
+    <div class="container_24">
+
+        <!-- debut header -->
+        <header id="menu" class="box">
+            <div class="prefix_2 grid_6">
+                <img class="responsive" src="assets/imgs/logo.png" alt="logo_flash">
+            </div>
+            <div class="grid_10" id="logo">
+                <img class="responsive" src="assets/imgs/logo-texte.png" alt="logo_flash-text">
+            </div>
+            <div class="grid_6" id="search">
+                <form id="form-search">
+                    <input class="form-input" type="text" placeholder="Recherche .."/>
+                    <input class="btn" type="button" value=" "/>
+                </form>
+                <!--Menu Mobile-->
+                <div class="menu-icon menu-icon-cross">
+                    <span></span>
+                    <svg x="0" y="0" width="54px" height="54px" viewBox="0 0 54 54">
+                        <circle cx="27" cy="27" r="26"></circle>
+                    </svg>
+                </div>
+            </div>
+        </header>
+        <!-- fin header -->
+
+        <!-- debut navigation -->
+        <nav id="navigation" class="grid_24 box">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-bolt"></i> Accueil</a></li>
+                <li><a href="index.html"><i class="fa fa-history"></i> Histoire</a></li>
+                <li><a href="index.html"><i class="fa fa-users"></i> Acteurs</a></li>
+            </ul>
+            <form id="form-search-mobile">
+                <input class="form-input" type="text" placeholder="Recherche .."/>
+                <input class="btn" type="button" value=" "/>
+            </form>
+        </nav>
+        <!-- fin navigation -->
+
+        <!-- debut main -->
+        <main>
+
+            <header id="sub_menu" class="grid_24 box">
+                <img class="responsive aligne_center" src="assets/imgs/banner.jpg" alt="banner_flash" width="470">
+            </header>
+
+            <!-- debut section generale -->
+            <section id="main_section" class="container_24">
+
+                <article class="grid_8 box" itemscope itemtype="http://schema.org/Article">
+                    <header>
+                        <h2 itemprop="name">Titre 1</h2>
+                        <time itemprop="dateCreated" datetime="2015-10-16 12:03">16 October 2015, 16:03</time>
+                        <img class="responsive aligne_center" src="assets/imgs/article.png" alt="article_flash" >
+                    </header>
+                    <section itemprop="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores error illum in incidunt itaque, molestiae natus numquam optio perferendis quis tempore vero? Aperiam deserunt impedit iure necessitatibus reprehenderit, soluta!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores error illum in incidunt itaque, molestiae natus numquam optio perferendis quis tempore vero? Aperiam deserunt impedit iure necessitatibus reprehenderit, soluta!</p>
+                        <p><a href="info.html" itemprop="url">Voir plus ...</a></p>
+                    </section>
+                </article>
+
+                <article class="grid_8 box" itemscope itemtype="http://schema.org/Article">
+                    <header>
+                        <h2 itemprop="name">Titre 2</h2>
+                        <time itemprop="dateCreated" datetime="2015-10-16 12:03">16 October 2015, 17:03</time>
+                        <img class="responsive aligne_center" src="assets/imgs/article.png" alt="article_flash" >
+                    </header>
+                    <section itemprop="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores error illum in incidunt itaque, molestiae natus numquam optio perferendis quis tempore vero? Aperiam deserunt impedit iure necessitatibus reprehenderit, soluta!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores error illum in incidunt itaque, molestiae natus numquam optio perferendis quis tempore vero? Aperiam deserunt impedit iure necessitatibus reprehenderit, soluta!</p>
+                        <p><a href="info.html" itemprop="url">Voir plus ...</a></p>
+                    </section>
+                </article>
+
+                <article class="grid_8 box" itemscope itemtype="http://schema.org/Article">
+                    <header>
+                        <h2 itemprop="name">Titre 3</h2>
+                        <time itemprop="dateCreated" datetime="2015-10-16 12:03">16 October 2015, 18:03</time>
+                        <img class="responsive aligne_center" src="assets/imgs/article.png" alt="article_flash" >
+                    </header>
+                    <section itemprop="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores error illum in incidunt itaque, molestiae natus numquam optio perferendis quis tempore vero? Aperiam deserunt impedit iure necessitatibus reprehenderit, soluta!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolores error illum in incidunt itaque, molestiae natus numquam optio perferendis quis tempore vero? Aperiam deserunt impedit iure necessitatibus reprehenderit, soluta!</p>
+                        <p><a href="info.html" itemprop="url">Voir plus ...</a></p>
+                    </section>
+                </article>
+
+                <nav id="pagination-nav" class="grid_24">
+                    <ul class="aligne_center">
+                        <li><a href="#">Previous Page</a></li>
+                        <li><a href="#" class="active" title="Go to page 1">1</a></li>
+                        <li><a href="#" title="Go to page 2">2</a></li>
+                        <li><a href="#" title="Go to page 3">3</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#" title="Go to page XX">XX</a></li>
+                        <li><a href="#">Next Page</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+            <!-- fin section generale -->
+
+        </main>
+        <!-- fin main -->
+
+        <!-- debut footer -->
+        <footer class="clearfix">
+            <section class="grid_24 aligne_center box-footer">
+                <nav id="footer-nav">
+                    <ul>
+                        <li>
+                            <a title="Plan du Site" href="index.html">Plan du Site</a>
+                        </li>
+                        <li>
+                            <a title="Contact" href="index.html">Contact</a>
+                        </li>
+                        <li>
+                            <a title="Mention Legale" href="index.html">Mention Legale</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p>&copy; 2015 - The Flash</p>
+            </section>
+        </footer>
+        <!-- fin footer -->
+
+    </div>
+    <!-- fin container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

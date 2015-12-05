@@ -1,0 +1,156 @@
+.menu-icon {
+    margin: 25px auto;
+    display: none;
+    position: relative;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+.menu-icon span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #FFF;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.menu-icon span::before, .menu-icon span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #FFF;
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.menu-icon span::after {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+}
+.menu-icon:hover span::before {
+    -webkit-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+.menu-icon:hover span::after {
+    -webkit-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    transform: translateY(8px);
+}
+
+.menu-icon-cross {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+.menu-icon-cross span::before, .menu-icon-cross span::after {
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.menu-icon-cross span {
+    z-index: 2;
+    -webkit-transition: background 0.5s, -webkit-transform 0.5s;
+    transition: background 0.5s, transform 0.5s;
+}
+.menu-icon-cross svg {
+    position: relative;
+    z-index: 1;
+    fill: #800F12;
+    stroke-width: 1px;
+    stroke: #FFF;
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+    -webkit-transition: stroke-dashoffset 0.5s, -webkit-transform 0.5s;
+    transition: stroke-dashoffset 0.5s, transform 0.5s;
+}
+.menu-icon-cross.is-opened {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.menu-icon-cross.is-opened span {
+    background: transparent;
+}
+.menu-icon-cross.is-opened span::before {
+    -webkit-transform: translateY(0) rotate(45deg);
+    -ms-transform: translateY(0) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
+}
+.menu-icon-cross.is-opened span::after {
+    -webkit-transform: translateY(0) rotate(-45deg);
+    -ms-transform: translateY(0) rotate(-45deg);
+    transform: translateY(0) rotate(-45deg);
+}
+.menu-icon-cross.is-opened svg {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    stroke-dashoffset: 0;
+}
+
+@-webkit-keyframes pathanimation {
+    40% {
+        stroke-dasharray: 22 230; }
+
+    60% {
+        stroke-dashoffset: -65; }
+
+    100% {
+        stroke-dashoffset: -65;
+        stroke-dasharray: 160; }
+}
+
+@keyframes pathanimation {
+    40% {
+        stroke-dasharray: 22 230; }
+
+    60% {
+        stroke-dashoffset: -65; }
+
+    100% {
+        stroke-dashoffset: -65;
+        stroke-dasharray: 160; }
+}
+
+@-webkit-keyframes pathanimation-out {
+    100% {
+        stroke-dashoffset: 0; }
+
+    60% {
+        stroke-dasharray: 22 230; }
+
+    40% {
+        stroke-dashoffset: -65; }
+
+    0% {
+        stroke-dashoffset: -65;
+        stroke-dasharray: 160; }
+}
+
+@keyframes pathanimation-out {
+    100% {
+        stroke-dashoffset: 0; }
+
+    60% {
+        stroke-dasharray: 22 230; }
+
+    40% {
+        stroke-dashoffset: -65; }
+
+    0% {
+        stroke-dashoffset: -65;
+        stroke-dasharray: 160; }
+}
